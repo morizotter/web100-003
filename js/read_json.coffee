@@ -41,19 +41,3 @@ for country in countries
 	dlNode.appendChild(dtNode).appendChild(nameNode)
 	dlNode.appendChild(ddNode).appendChild(altNode)
 element.parentNode.replaceChild(dlNode,element)
-
-###
-texts = ["text1", "text2", "text3", "text4"]
-
-element = document.getElementById("value")
-
-dlNode = document.createElement("dl")
-dlNode.className = "list-unstyled"
-
-for text in texts
-	console.log(text)
-	dtNode = document.createElement("dt")
-	textNode = document.createTextNode(text)
-	dlNode.appendChild(dtNode).appendChild(textNode)
-element.parentNode.replaceChild(dlNode,element)
-###

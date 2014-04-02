@@ -24,8 +24,6 @@
     }
   ];
 
-  console.log(countries[0]["name"]);
-
   element = document.getElementById("value");
 
   dlNode = document.createElement("dl");
@@ -34,7 +32,6 @@
 
   for (_i = 0, _len = countries.length; _i < _len; _i++) {
     country = countries[_i];
-    console.log(country);
     dtNode = document.createElement("dt");
     ddNode = document.createElement("dd");
     nameNode = document.createTextNode(country["name"]);
@@ -44,22 +41,5 @@
   }
 
   element.parentNode.replaceChild(dlNode, element);
-
-
-  /*
-  texts = ["text1", "text2", "text3", "text4"]
-  
-  element = document.getElementById("value")
-  
-  dlNode = document.createElement("dl")
-  dlNode.className = "list-unstyled"
-  
-  for text in texts
-  	console.log(text)
-  	dtNode = document.createElement("dt")
-  	textNode = document.createTextNode(text)
-  	dlNode.appendChild(dtNode).appendChild(textNode)
-  element.parentNode.replaceChild(dlNode,element)
-   */
 
 }).call(this);
